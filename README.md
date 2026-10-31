@@ -1,38 +1,31 @@
 Python Port Scanner
 
-Python ile geliştirilmiş basit bir port tarama aracı.
+A simple port scanner built with Python.
 
-Bu projeyi Python öğrenirken socket programlama pratiği yapmak ve port taramanın nasıl çalıştığını anlamak için geliştirdim.
+I created this project while learning Python to practice socket programming and understand how port scanning works.
 
-Özellikler
-TCP port tarama
-Multithreading desteği
-CIDR desteği
-Komut satırı parametreleri
-Gereksinimler
+Features
+TCP port scanning
+Multithreading
+CIDR support
+Command-line arguments
+Requirements
 Python 3
-Kurulum
-
-Projeyi bilgisayarınıza indirin:
-
+Installation
 bash
 git clone https://github.com/husrevoz/python-port-scanner.git
 cd python-port-scanner
 
-Kullanım
-
-Programın kullanılabilir parametrelerini görmek için:
-
+Usage
 bash
-python3 portscannerv3.py --help
+python3 portscannerv4.py --help
 
-Öğrendiklerim
-Python'da socket kullanımı
-Temel ağ kavramları
-Thread kullanımı
-IP adresleri ve CIDR aralıkları
-Komut satırı parametreleriyle çalışma
-Uyarı
+What I Learned
+Working with sockets in Python
+Basic networking concepts
+Using threads
+Handling IP addresses and CIDR ranges
+Working with command-line arguments
+Disclaimer
 
-Bu proje eğitim amaçlı geliştirilmiştir. Yalnızca sahibi olduğunuz veya tarama izniniz bulunan ağlarda kullanın.
-python PortScannerv4.py --hedef <IP/CIDR> [--port-range <BAŞLANGIÇ-BİTİŞ>] [--thread <SAYI>]
+This project is for educational purposes only. Use it only on networks you own or have permission to scan.
