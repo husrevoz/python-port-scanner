@@ -1,19 +1,38 @@
-# Python Port Scanner
+Python Port Scanner
 
-Python ile geliştirdiğim, nesne yönelimli (OOP) mimariye sahip, `argparse` ile parametre yönetimi sunan ve `ThreadPoolExecutor` ile paralel tarama yapabilen bir CLI port tarayıcı.
+Python ile geliştirilmiş basit bir port tarama aracı.
 
-Tekil IP adreslerinin yanı sıra CIDR bloklarını (`/24`, `/16` vb.) otomatik ayrıştırarak ağ üzerindeki açık portları hızlıca tespit eder.
+Bu projeyi Python öğrenirken socket programlama pratiği yapmak ve port taramanın nasıl çalıştığını anlamak için geliştirdim.
 
-## Özellikler
+Özellikler
+TCP port tarama
+Multithreading desteği
+CIDR desteği
+Komut satırı parametreleri
+Gereksinimler
+Python 3
+Kurulum
 
-* **Paralel Tarama:** Multi-threading sayesinde portları eşzamanlı ve hızlı bir şekilde tarar.
-* **Esnek Port Aralığı:** `--port-range` parametresi ile ister tek bir portu (`80`), ister belirli bir aralığı (`20-1024`) tarayabilirsiniz.
-* **CIDR ve Ağ Desteği:** `ipaddress` kütüphanesi ile alt ağ bloklarını otomatik çözümler.
-* **Gelişmiş CLI:** `argparse` altyapısı sayesinde parametreleri isimleriyle (`--hedef`, `--port-range`, `--thread`) kolayca yönetmenizi sağlar.
+Projeyi bilgisayarınıza indirin:
 
-## Kullanım
+bash
+git clone https://github.com/husrevoz/python-port-scanner.git
+cd python-port-scanner
 
-Herhangi bir harici kütüphane bağımlılığı yoktur. Terminalden çalıştırmak için:
+Kullanım
 
-```bash
+Programın kullanılabilir parametrelerini görmek için:
+
+bash
+python3 portscannerv3.py --help
+
+Öğrendiklerim
+Python'da socket kullanımı
+Temel ağ kavramları
+Thread kullanımı
+IP adresleri ve CIDR aralıkları
+Komut satırı parametreleriyle çalışma
+Uyarı
+
+Bu proje eğitim amaçlı geliştirilmiştir. Yalnızca sahibi olduğunuz veya tarama izniniz bulunan ağlarda kullanın.
 python PortScannerv4.py --hedef <IP/CIDR> [--port-range <BAŞLANGIÇ-BİTİŞ>] [--thread <SAYI>]
